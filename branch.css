@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* hero */
+.hero {
+  background-image: url("../img/minsk-belarus-august-2017-column.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 89.3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.blackColor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.708);
+}
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 5;
+}
+.heroText1 {
+  font-size: 65px;
+  font-weight: bold;
+  margin-left: 8%;
+  max-width: 50vw;
+  text-align: center;
+}
+.heroText2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 28px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.heroText3 {
+  background-color: orange;
+  color: white;
+  padding-inline: 20px;
+  padding-block: 12px;
+  border-radius: 8px;
+  width: 40%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-left: 8%;
+  margin-top: 10%;
+}
+
+/* welcome */
+.welcome {
+  width: 100vw;
+  height: 89.3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.welcomeText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: orange;
+  width: 100vw;
+  font-weight: bold;
+}
+.welcome > p {
+  margin-top: 3%;
+  font-size: 18px;
+  color: rgb(18, 18, 118);
+  width: 55vw;
+  text-align: center;
+  align-self: center;
+  line-height: 25px;
+}
+.welcomeImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  gap: 80px;
+  margin-top: 3%;
+}
+.welcomeImg > div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+.welcomeImg > :nth-child(1),
+.welcomeImg > :nth-child(2),
+.welcomeImg > :nth-child(3) {
+  background-image: url("../img/png-transparent-black-splatter-p-removebg-preview.png");
+}
+.welcomeImg > :nth-child(1)::before {
+  content: "";
+  background-image: url("../img/essentia-luxury-hotel.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: screen;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcomeImg > :nth-child(2)::before {
+  content: "";
+  background-image: url("../img/pexels-photo-258154.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: screen;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcomeImg > :nth-child(3)::before {
+  content: "";
+  background-image: url("../img/essentia-luxury-hotel.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: screen;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* overview */
+.overview {
+  width: 100vw;
+  height: 89.3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-image: url("../img/pexels-photo-258154.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.bg {
+  background-color: rgba(5, 5, 78, 0.39);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.overviewText {
+  width: 80vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 32px;
+  color: orange;
+  font-weight: bold;
+}
+.overview > p {
+  width: 80vw;
+  margin-top: 2%;
+  font-size: 18px;
+}
+.overview > span {
+  z-index: 5;
+  width: 80vw;
+}
+.tableDiv {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10vw;
+}
+table {
+  margin-top: 3%;
+  width: 50vw;
+}
+thead > tr > th {
+  background-color: rgb(112, 112, 112);
+  line-height: 30px;
+  border-top-color: rgb(0, 255, 13);
+  border-top-width: 3px;
+  border-top-style: solid;
+}
+tbody > tr > td {
+  line-height: 28px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+tbody > tr > :nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* branch details */
+.branchDetails {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.branchText {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  font-size: 32px;
+  margin-top: 6%;
+}
+.branchNameSpan {
+  color: black;
+  font-size: 20px;
+  margin-top: 2%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.branchName {
+  font-weight: bold;
+  color: #24186a;
+  margin-top: 2%;
+  margin-left: 8%;
+}
+.text1 {
+  font-size: 17px;
+  margin-left: 10%;
+  margin-top: 1.5%;
+  line-height: 25px;
+}
+
+.text1 > :nth-child(2) {
+  font-weight: bold;
+  line-height: 60px;
+}
+.iframeContainer {
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+iframe {
+  margin-left: 18%;
+  margin-right: 5%;
+}
+.branchImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+}
+.branchImg {
+  background-image: url("../img/pexels-photo-258154.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 170px;
+  height: 170px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+@media (max-width: 768px) {
+  .heroText1 {
+    font-size: 33px;
+  }
+  .heroText2 {
+    font-size: 20px;
+  }
+  .heroText3 {
+    width: 150px;
+    font-size: 15px;
+    margin-top: 15%;
+  }
+  .welcomeImg {
+    width: max-content;
+  }
+  .welcomeImg > :nth-child(1),
+  .welcomeImg > :nth-child(3) {
+    display: none;
+  }
+  table {
+    width: 90vw;
+    margin-top: 8%;
+  }
+  .overview > span > :nth-child(2) {
+    margin-top: 3%;
+  }
+  .iframeContainer {
+    width: 100vw;
+    flex-direction: column;
+  }
+  .iframeContainer > div {
+    margin-top: 5%;
+  }
+}

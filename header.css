@@ -1,0 +1,70 @@
+/* nav */
+.navbarWrapper {
+  list-style: none;
+  max-width: 100vw;
+  height: auto;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding-block: 18px;
+  padding-inline: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  color: orange;
+  font-size: 35px;
+  width: 40%;
+}
+
+.logoIcon {
+  color: orange;
+  margin-right: 8px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  font-size: 18px;
+  width: 60%;
+}
+.links > a {
+  padding: 10px;
+  margin-inline: 10px;
+  color: white;
+}
+.bookNowBtn {
+  background-color: orange;
+  color: white;
+  padding-block: 8px;
+  padding-inline: 15px;
+  border-radius: 5px;
+}
+.cursor {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbarWrapper,
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .navbarWrapper > .logo {
+    display: none;
+  }
+}
