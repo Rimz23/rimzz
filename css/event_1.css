@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* hero */
+.hero {
+  background-image: url("../img/gala-dinner-780.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 89.3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.heroBtn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+}
+.event {
+  background-color: #24186a !important;
+}
+.blackColor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.708);
+}
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 5;
+}
+.heroText1 {
+  font-size: 65px;
+  font-weight: bold;
+  margin-left: 8%;
+  max-width: 50vw;
+  text-align: center;
+}
+.heroText2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 28px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.heroText3 {
+  background-color: orange;
+  color: white;
+  padding-inline: 20px;
+  padding-block: 12px;
+  border-radius: 8px;
+  width: 40%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-left: 8%;
+  margin-top: 10%;
+}
+
+/* welcome */
+.welcome {
+  width: 100vw;
+  height: 89.3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+.welcomeText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: orange;
+  width: 100vw;
+  font-weight: bold;
+  margin-top: 6%;
+}
+.welcome > p {
+  margin-top: 3%;
+  font-size: 18px;
+  color: rgb(18, 18, 118);
+  width: 75vw;
+  text-align: center;
+  align-self: center;
+  line-height: 25px;
+}
+.welcomeImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  gap: 80px;
+  margin-top: 3%;
+}
+.welcomeImg > div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+.welcomeImg > :nth-child(1),
+.welcomeImg > :nth-child(2),
+.welcomeImg > :nth-child(3) {
+  background-image: url("../img/png-transparent-black-splatter-p-removebg-preview.png");
+}
+.welcomeImg > :nth-child(1)::before {
+  content: "";
+  background-image: url("../img/WhatsApp-Image-2019-02-25-at-20.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: screen;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcomeImg > :nth-child(2)::before {
+  content: "";
+  background-image: url("../img/Corporate-Gala-Dinner-Event.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: screen;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcomeImg > :nth-child(3)::before {
+  content: "";
+  background-image: url("../img/gala-dinner-hexagonal-stage-set.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: screen;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* event details */
+.eventDetails {
+  width: 100vw;
+  height: 89.3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overviewText {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: orange;
+  font-weight: bold;
+}
+
+/* branch details */
+.branchDetails {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(0, 4, 76);
+  align-items: center;
+}
+.branchText {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  font-size: 32px;
+  margin-top: 6%;
+}
+.branchNameSpan {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-top: 2%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+}
+.text1 {
+  font-size: 17px;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.text1 > span {
+  font-weight: bold;
+  line-height: 60px;
+  color: #e0daff;
+}
+.text1 > .space {
+  margin-top: 3%;
+}
+.iframeContainer {
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40vw;
+}
+iframe {
+  margin-left: 18%;
+  margin-right: 5%;
+}
+.branchImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+}
+.branchImg {
+  background-image: url("../img/pexels-photo-258154.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 170px;
+  height: 170px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+/* testimonial */
+.testimonial {
+  width: 100vw;
+  height: 89.3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tText1 {
+  font-size: 30px;
+  color: orange;
+  text-transform: capitalize;
+}
+.tText2 {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+.description {
+  font-size: 18px;
+  max-width: 60%;
+  text-align: center;
+  line-height: 25px;
+  color: rgb(12, 40, 104);
+}
+.cards {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  width: 100vw;
+  overflow-x: scroll;
+  padding-inline: 20px;
+}
+.card {
+  background-color: rgba(243, 244, 246, 1);
+  padding: 2rem;
+  min-width: 300px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.header .image {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  grid-gap: 0.125rem;
+  gap: 0.125rem;
+  color: rgba(34, 197, 94, 1);
+}
+
+.stars svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.name {
+  margin-top: 0.25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, 1);
+}
+
+.message {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  margin-top: 1rem;
+  color: rgb(24, 0, 110);
+  text-align: center;
+}
+.image1 {
+  background-image: url("../img/testimonial-1.jpg");
+}
+.image2 {
+  background-image: url("../img/testimonial-2.jpg");
+}
+.image3 {
+  background-image: url("../img/testimonial-3.jpg");
+}
+.image4 {
+  background-image: url("../img/testimonial-4.jpg");
+}
+.image5 {
+  background-image: url("../img/testimonial-2.jpg");
+}
+.image6 {
+  background-image: url("../img/testimonial-1.jpg");
+}
+
+.animation {
+  animation: animate 5s infinite ease-in-out;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroText1 {
+    margin-left: 0%;
+    font-size: 30px;
+  }
+  .heroText2 {
+    font-size: 20px;
+    margin-left: 0%;
+  }
+  .heroBtn {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroText3 {
+    font-size: 15px;
+    width: 150px;
+  }
+  .welcome {
+    margin-top: 35%;
+  }
+  .welcomeText {
+    margin-bottom: 2%;
+  }
+  .welcomeImg {
+    width: max-content;
+  }
+  .welcomeImg > :nth-child(1),
+  .welcomeImg > :nth-child(3) {
+    display: none;
+  }
+  .branchDetails {
+    margin-top: 30%;
+  }
+  .para {
+    flex-direction: column;
+  }
+  .text1 {
+    width: 90vw;
+  }
+  .iframeContainer {
+    width: 90vw;
+  }
+  .iframeContainer > div {
+    margin-left: 12%;
+  }
+}

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resturent | 4Seasons</title>
+
+    <link rel="icon" href="../img/hero.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/resturent.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbarWrapper">
+        <div class="logo" onclick="window.location.href='index.html';"><span class="logoIcon">4</span>Seasons</div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="branch.html">Branch</a>
+            <a href="adventure.html">Adventure</a>
+            <a href="resturent.html">Resturent</a>
+            <a href="bookNow.html" class="bookNowBtn">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <main class="hero">
+        <div class="blackColor"></div>
+        <div class="heroText">
+            <div class="heroText1">Enjoy Our <br />Delicious Meal</div>
+            <div class="heroText1 heroText2">
+                "Savor the moment and enjoy our delicious meals, where every bite is a
+                symphony of flavors. Indulge your senses and relish the delight of our
+                delectable dishes, a culinary experience like no other."
+            </div>
+            <span class="heroBtn">
+                <div class="heroText2 heroText3" onclick="window.location.href='bookNow.html';">book a table</div>
+                <div class="heroText2 heroText3 event" onclick="window.location.href='event_1.html';">Go To Events</div>
+            </span>
+        </div>
+        <div class="heroImage">
+            <img src="../img/hero.png" class="piza" width="550" alt="" />
+        </div>
+    </main>
+
+    <!-- resturent details -->
+    <section class="resturentDetails">
+        <div class="resturentText">Resturents</div>
+
+        <span class="resturentNameSpan">
+            <div class="resturentName">Fine Dining Elegance</div>
+            <p class="text1">
+                Immerse yourself in luxury at our Fine Dining restaurant, where a carefully curated menu of exquisite
+                cuisines and a rich selection of wines await. Experience the pinnacle of culinary artistry in an elegant
+                ambiance
+                <br />
+            <div class="menu" onclick="menu('1');">Menu</div>
+
+            <div class="menuList" id="menuList1">
+
+                <div class="category">
+                    <span onclick="show('1','1');">Breakfast</span>
+                    <span onclick="show('2','1');">Lunch</span>
+                    <span onclick="show('3','1');">Dinner</span>
+                </div>
+
+                <div class="categoryItem categoryItemBreakfast1" id="breakfast1">
+                    <div class="card">
+                        <div class="img img1"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img2"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img3"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img4"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img5"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img6"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoryItem categoryItemLunch1" id="lunch1">
+                    <div class="card">
+                        <div class="img img1"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img5"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img6"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoryItem categoryItemDinner1" id="dinner1">
+                    <div class="card">
+                        <div class="img img1"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img3"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img4"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img6"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="iframeContainer">
+                <div class="resturentImgContainer">
+                    <div class="resturentImg"></div>
+                    <div class="resturentImg"></div>
+                    <div class="resturentImg"></div>
+                    <div class="resturentImg"></div>
+                </div>
+            </div>
+            </p>
+        </span>
+
+        <span class="resturentNameSpan">
+            <div class="resturentName">Bistro Bliss</div>
+            <p class="text1">
+                Bistro Bliss offers a relaxed and welcoming environment where you can savor delicious comfort food and
+                refreshing beverages. It's the perfect spot for casual dining with friends and family
+                <br />
+            <div class="menu" onclick="menu('2');">Menu</div>
+
+            <div class="menuList" id="menuList2">
+
+                <div class="category">
+                    <span onclick="show('1','2');">Breakfast</span>
+                    <span onclick="show('2','2');">Lunch</span>
+                    <span onclick="show('3','2');">Dinner</span>
+                </div>
+
+                <div class="categoryItem categoryItemBreakfast2" id="breakfast2">
+                    <div class="card">
+                        <div class="img img1"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img2"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img3"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img4"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img5"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img6"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoryItem categoryItemLunch2" id="lunch2">
+                    <div class="card">
+                        <div class="img img1"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img5"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img6"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoryItem categoryItemDinner2" id="dinner2">
+                    <div class="card">
+                        <div class="img img1"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img3"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img4"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img6"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="iframeContainer">
+                <div class="resturentImgContainer">
+                    <div class="resturentImg"></div>
+                    <div class="resturentImg"></div>
+                    <div class="resturentImg"></div>
+                    <div class="resturentImg"></div>
+                </div>
+            </div>
+            </p>
+        </span>
+
+        <span class="resturentNameSpan">
+            <div class="resturentName">Poolside Paradise</div>
+            <p class="text1">
+                Dive into the poolside paradise, where you can enjoy a refreshing swim and relish a variety of snacks,
+                refreshing drinks, and tropical cocktails. It's the ultimate relaxation and indulgence spot
+                <br />
+            <div class="menu" onclick="menu('3');">Menu</div>
+
+            <div class="menuList" id="menuList3">
+
+                <div class="category">
+                    <span onclick="show('1','3');">Breakfast</span>
+                    <span onclick="show('2','3');">Lunch</span>
+                    <span onclick="show('3','3');">Dinner</span>
+                </div>
+
+                <div class="categoryItem categoryItemBreakfast3" id="breakfast3">
+                    <div class="card">
+                        <div class="img img1"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img2"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img3"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img4"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img5"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img6"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoryItem categoryItemLunch3" id="lunch3">
+                    <div class="card">
+                        <div class="img img1"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img5"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img6"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoryItem categoryItemDinner3" id="dinner3">
+                    <div class="card">
+                        <div class="img img1"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img3"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img4"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img img6"></div>
+                        <div class="textBox">
+                            <div class="textContent">
+                                <p class="h1">Clans of Clash</p>
+                                <span class="span">125 $</span>
+                            </div>
+                            <p class="p">Xhattmahs is not attacking your base!</p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="iframeContainer">
+                <div class="resturentImgContainer">
+                    <div class="resturentImg"></div>
+                    <div class="resturentImg"></div>
+                    <div class="resturentImg"></div>
+                    <div class="resturentImg"></div>
+                </div>
+            </div>
+            </p>
+        </span>
+
+        <br>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footerDiv1">
+            <div class="logo footerLogo">
+                <span class="logoIcon">4</span>Seasons
+            </div>
+            <div class="secondDiv">
+                <div class="contact">
+                    <h4 class="txt1">Contact</h4>
+                    <p class="txt2">
+                        <i class="fa fa-map-marker-alt footerIcon"></i>323 Street, New
+                        York, USA
+                    </p>
+                    <p class="txt2">
+                        <i class="fa fa-phone-alt footerIcon"></i>+012 456 6578
+                    </p>
+                    <p class="txt2">
+                        <i class="fa fa-envelope footerIcon"></i>4Seasons@gmail.com
+                    </p>
+                </div>
+                <div class="contact open">
+                    <h4 class="txt1">Opening</h4>
+                    <p>Monday - Saturday</p>
+                    <p>09AM - 09PM</p>
+                    <p>Sunday</p>
+                    <p>10AM - 08PM</p>
+                </div>
+                <div class="contact">
+                    <h4 class="txt1">Newsletter</h4>
+                    <p>Anywhere and Anytime</p>
+                    <input type="email" placeholder="Your Email ..." name="text" class="input" />
+                </div>
+            </div>
+        </div>
+        <hr />
+        <small>&copy; 4Seasons, All Right Reserved. </small>
+    </footer>
+
+
+    <script src="../js/resturent.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+main {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main > :nth-child(1),
+main > :nth-child(2) {
+  width: 20vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+main > :nth-child(1) {
+  border-right: 2px solid rgb(157, 157, 157);
+  gap: 15px;
+  background-color: #dcdcdc;
+  overflow-y: scroll;
+}
+
+.card {
+  --border-radius: 0.75rem;
+  --primary-color: #7257fa;
+  --secondary-color: #3c3852;
+  width: 210px;
+  font-family: "Arial";
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background: #f1f1f3;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+  position: relative;
+}
+
+.card > * + * {
+  margin-top: 1.1em;
+}
+
+.card .card__content {
+  color: var(--secondary-color);
+  font-size: 0.86rem;
+}
+
+.card .card__title {
+  padding: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.card .card__date {
+  color: #6e6b80;
+  font-size: 0.8rem;
+}
+
+.cardBody {
+  margin-top: 15%;
+}
+.cardPrice {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+main > :nth-child(2) {
+  width: 80vw;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 35px;
+}
+.sectionName {
+  width: 100%;
+  font-size: 18px;
+  color: rgb(29, 29, 122);
+  font-weight: bold;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  line-height: 30px;
+}
+.sectionName1 {
+  margin-top: 57%;
+}
+.sectionName > :nth-child(2) {
+  margin-right: 40px;
+}
+
+/* small card */
+.card {
+  width: 190px;
+  height: 254px;
+  margin: 0 auto;
+  background-color: #f8fbfe;
+  border-radius: 8px;
+  z-index: 1;
+  margin-block: 2%;
+}
+
+main > :nth-child(2) > :nth-child(1) {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 15px;
+  padding-right: 10px;
+}
+.btn {
+  width: 90px;
+  padding-inline: 15px;
+  padding-block: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.bookNowBtn2 {
+  background-color: #00ca4e;
+}
+.bookAdventure {
+  background-color: rgb(28, 28, 112);
+  width: 130px;
+  color: white;
+}
+
+.formSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* form */
+.container {
+  position: relative;
+  width: 30vw;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-left: 13%;
+  margin-top: -11%;
+}
+
+.container header {
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container .form {
+  margin-top: 15px;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input-box label {
+  color: #000;
+}
+.fullname {
+  width: 93.5% !important;
+}
+
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 35px;
+  width: 87%;
+  outline: none;
+  font-size: 1rem;
+  color: #808080;
+  margin-top: 5px;
+  border: 1px solid #2d266f;
+  border-radius: 6px;
+  padding: 0 15px;
+  background: #ffffff;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form .gender-box {
+  margin-top: 10px;
+}
+
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form .gender {
+  column-gap: 5px;
+}
+
+.gender input {
+  accent-color: #ee4e34;
+}
+
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+
+.gender label {
+  color: #000;
+}
+
+.address :where(input, .select-box) {
+  margin-top: 10px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #808080;
+  font-size: 1rem;
+  background: #ffffff;
+}
+
+.form button {
+  height: 40px;
+  width: 100%;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #32f800;
+}
+
+.form button:hover {
+  background: #38157e;
+  color: white;
+}
+
+/* checkout */
+/* Body */
+.container2 {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 0px;
+  margin-bottom: -6%;
+}
+
+hr {
+  height: 1px;
+  background-color: #e5e0c5;
+  border: none;
+}
+
+.card2 {
+  width: 400px;
+  background: #f4e2de;
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01),
+    0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09),
+    0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid #e5c7c5;
+  font-weight: 700;
+  font-size: 11px;
+  color: #000000;
+}
+
+/* Cart */
+.cart {
+  border-radius: 19px 19px 0px 0px;
+}
+
+.cart .steps {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.cart .steps .step {
+  display: grid;
+  gap: 10px;
+}
+
+.cart .steps .step span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.cart .steps .step p {
+  font-size: 11px;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Promo */
+.promo form {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  gap: 10px;
+  padding: 0px;
+}
+
+.input_field {
+  width: auto;
+  height: 36px;
+  padding: 0 0 0 12px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #e5c7c5;
+  background-color: #f4e2de;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.input_field:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #f3d2c9;
+  background-color: #f4e2de;
+}
+
+.promo form button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 18px;
+  gap: 10px;
+  width: 100%;
+  height: 36px;
+  background: #f3d2c9;
+  box-shadow: 0px 0.5px 0.5px #f3d2c9, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+  border-radius: 5px;
+  border: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+/* Checkout */
+.payments .details {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  padding: 0px;
+  gap: 5px;
+}
+
+.payments .details span:nth-child(odd) {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000000;
+  margin: auto auto auto 0;
+}
+
+.payments .details span:nth-child(even) {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000000;
+  margin: auto 0 auto auto;
+}
+
+.checkout .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 10px 20px;
+  background-color: #000000;
+}
+
+.price {
+  position: relative;
+  font-size: 22px;
+  color: #fbc900;
+  font-weight: 900;
+}
+
+.checkout .checkout-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 36px;
+  background: #088b2d;
+  box-shadow: 0px 0.5px 0.5px #e5c7c5, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+  border-radius: 7px;
+  border: 1px solid #ecc2c0;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+.visa {
+  width: 97%;
+}
+.promoCodeApply {
+  margin-top: -2% !important;
+}
+
+.loyality {
+  width: 140px;
+  margin-right: auto;
+  background-color: #6e6b80;
+  margin-left: 3%;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column-reverse;
+  }
+  .btn {
+    width: max-content;
+  }
+  .formSection {
+    flex-direction: column;
+  }
+  .container {
+    margin-top: 15%;
+    width: 70vw;
+    margin-left: 0%;
+    margin-bottom: 10%;
+  }
+  main > :nth-child(1) {
+    margin-top: 10%;
+    width: 100vw;
+  }
+}
